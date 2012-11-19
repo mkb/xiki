@@ -36,7 +36,6 @@ Gem::Specification.new do |s|
   s.add_dependency('net-ssh')
   s.add_dependency('net-scp')
   s.add_dependency('net-sftp')
-  s.add_dependency('rspec', [" ~> 2.11.0"])
   s.add_dependency('trogdoro-el4r', [">= 1.0.7"])
 
   s.add_dependency('sexp_processor')
@@ -44,6 +43,9 @@ Gem::Specification.new do |s|
   s.add_dependency('ruby_parser')
   s.add_dependency('sourcify')
   s.add_dependency('daemons')
+
+  s.add_development_dependency('rake')
+  s.add_development_dependency('rspec', [" ~> 2.12.0"])
 
   # Restore if changes get merged into main el4r gem
   #  s.add_dependency('el4r')
